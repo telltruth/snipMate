@@ -110,3 +110,5 @@ snippet un
 	unsigned
 snippet prk
 	printk(KERN_EMERG"${1:%s}\n"${2});${3}
+snippet prkf
+	printk(KERN_EMERG"${1:%s}\n"${2}, __FUNCTION__);${3}
