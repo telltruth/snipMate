@@ -61,8 +61,8 @@ snippet wh
 	}
 # For Loop
 snippet for
-	for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
-		${4:/* code */}
+	for (${3:i} = 0; $3 < ${1:count}; $3${4:++}) {
+		${2:/* code */}
 	}
 # Custom For Loop
 snippet forr
@@ -71,9 +71,9 @@ snippet forr
 	}
 # Function
 snippet fun
-	${1:void} ${2:function_name}(${3})
+	void ${1:function_name}(${2})
 	{
-		${4:/* code */}
+		${3:/* code */}
 	}
 # Function Declaration
 snippet fund
@@ -111,4 +111,4 @@ snippet un
 snippet prk
 	printk(KERN_EMERG"${1:%s}\n"${2});${3}
 snippet prkf
-	printk(KERN_EMERG"${1:%s}\n"${2}, __FUNCTION__);${3}
+	printk(KERN_EMERG"${1:%s}\n", __FUNCTION__${2});${3}
